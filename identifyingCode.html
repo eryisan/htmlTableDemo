@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3-2 項目作業</title>
+    <!-- <link rel="stylesheet" type="text/css" href="3-2.css">-->
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border: 2px gray solid;
+        }
+
+        .logo {
+            height: 60px;
+            width: 100%;
+            background: #abc;
+        }
+
+        .logo>img {
+            padding-top: 10px;
+        }
+
+        /*主體左側 width:12%*/
+        tbody>tr>.leftcontent {
+            width: 12%;
+        }
+
+        tbody>tr>.rightcontent {
+            width: 88%;
+        }
+
+        .order {
+            text-align: center;
+            height: 50px;
+
+        }
+
+        .order img {
+            width: 50px;
+            height: 50px;
+        }
+
+
+        tbody>.order>tr>td {
+            height: 60px;
+        }
+
+        table>tfoot>div {
+            background: #abc;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        .allorder {
+            height: 50px;
+        }
+
+        .question {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <!-- 頂部 -->
+        <thead>
+            <!-- <div class="logo"><img src="img/logo.png"></div> -->
+            <tr height="60px" bgcolor="#169bd5">
+                <td colspan="2"><img src="img/logo.png"></td>
+            </tr>
+        </thead>
+
+
+
+        <!-- 主體 -->
+        <tbody>
+            <tr>
+                <!-- 主體左側 width:12%  內容<p><br/> -->
+                <td class="leftcontent">
+                    <p>&nbsp;&nbsp;商品管理</p>
+                    <p>&nbsp;&nbsp;評價管理</p>
+                    <p>&nbsp;&nbsp;咨詢管理</p>
+                    <br /><br />
+                    <p><b>&nbsp;&nbsp;全部訂單</b></p>
+                    <p>&nbsp;&nbsp;已完成訂單</p>
+                    <p>&nbsp;&nbsp;待處理訂單</p>
+                    <p>&nbsp;&nbsp;今日物流</p>
+                    <br /><br />
+                    <p>&nbsp;&nbsp;月考核</p>
+                    <p>&nbsp;&nbsp;季度考核</p>
+                    <p>&nbsp;&nbsp;年度考核</p>
+                </td>
+
+
+
+                <!-- 主體右側 width:88% ,3個table-->
+                <td class="rightcontent">
+                    <!-- table1全部訂單 -->
+                    <table class="allorder">
+                        <tr>
+                            <td>全部訂單</td>
+                        </tr>
+                    </table>
+                    <!-- table2:查詢部分 -->
+                    <table class="question">
+                        <tr>
+                            <td>查詢:<input type="date" name="date">至<input type="date" name="date"></td>
+                        </tr>
+                    </table>
+
+
+                    <!-- table3:列單列表 13行8列 -->
+                    <table border="2" class="order">
+                        <tr>
+                            <td colspan="2" height="60px">寶貝信息</td>
+                            <td>訂單數量</td>
+                            <td>單價</td>
+                            <td>買家</td>
+                            <td>下單時間</td>
+                            <td>實付款</td>
+                            <td>訂單操作</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/tshirt.png"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行文化衫</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>小明</td>
+                            <td>2019-2-21 21:54</td>
+                            <td>240</td>
+                            <td>待付款</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/shoe.jpg"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行運動鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>小李子</td>
+                            <td>2019-2-21 19:04</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+                        <tr>
+                            <td class="img1"><img src="img/tshirt.png"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行文化衫</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>小紅</td>
+                            <td>2019-2-21 16:54</td>
+                            <td>240</td>
+                            <td>待發貨</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/shoe.jpg"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行運動鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>可樂</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+                        <tr>
+                            <td class="img1"><img src="img/tshirt.png"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行文化衫</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>魏明</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/shoe.jpg"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行運動鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>李雨</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/tshirt.png"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行文化衫</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>艷艷</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/shoe.jpg"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行運動鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>片片</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+                        <tr>
+                            <td class="img1"><img src="img/tshirt.png"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行文化衫</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>小蘭</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="img1"><img src="img/shoe.jpg"></td>
+                            <td>2019新款個性男女潮牌imooc慕春之行運動鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>風雲</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未發貨</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+        </tbody>
+
+
+        <!-- 底部 -->
+        <tfoot>
+            <tr height="60px" bgcolor="#169bd5">
+                <td colspan="2">2019-9-21 &copy;imooc.com</td>
+            </tr>
+        </tfoot>
+        <!--  <tfoot>
+  <div>2019-9-21 &copy;imooc.com</div>
+ </tfoot> -->
+    </table>
+
+</body>
+
+</html>

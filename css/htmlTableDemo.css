@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "微软雅黑";
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+    cursor:pointer;
+}
+
+a:hover{
+    color:blue;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+img{
+    display:block;
+}
+
+
+/* 头部和底部 */
+thead img{
+    margin:10px 0px 10px 30px;
+}
+
+tfoot td{
+    text-align:center;
+    color:#fff;
+    line-height:60px;
+}
+
+/* 左侧 */
+tbody .left{
+    line-height:2em;
+    padding-top:0px;
+}
+
+/* 右侧 */
+tbody table.list tr{
+    height:54px;
+}
+
+tbody table.list tr td img{
+    height:40px;
+    margin:0 auto;
+}
+
+tbody table.list{
+    text-align:center;
+}
